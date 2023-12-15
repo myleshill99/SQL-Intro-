@@ -8,7 +8,7 @@ select * from Products where price = 1400;
 select * from Products where price = 11.99 or price = 13.99;
 
 -- find all products that do NOT cost 11.99 - using NOT
-select * from Products where price is not 11.99; 
+select * from Products where not price = 11.99;
 -- find all products and sort them by price from greatest to least
 select * from Products order by price desc;  
 -- find all employees who don't have a middle initial
